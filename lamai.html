@@ -7,9 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
-    <title>Checkout example · Bootstrap v5.0</title>
+    <title>คําร้องขอลาพักการศึกษา</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+    <link rel="shortcut icon" href="https://www.mju.ac.th/main/images/small.ico">
 
 
 
@@ -97,19 +98,643 @@
                     </form>
                 </div> -->
                 <div class="col align-self-center">
-                    <h4 class="mb-3">Billing address</h4>
+                    <!-- <h4 class="mb-3">Billing address</h4> -->
                     <form class="needs-validation" novalidate>
                         <div class="row g-3">
-                            <div class="col-sm-6">
-                                <label for="firstName" class="form-label">First name</label>
+                            <div class="col-sm-3">
+                                <label for="example-date-input" class="from-label">วันที่</label>
+                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="firstName" class="form-label">ภาคเรียนที่</label>
                                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
                                     Valid first name is required.
                                 </div>
                             </div>
 
-                            <div class="col-sm-6">
-                                <label for="lastName" class="form-label">Last name</label>
+                            <div class="col-sm-5">
+                                <label for="lastName" class="form-label">ปีการศึกษา</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label for="state" class="form-label">คำนำหน้า</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>นาย</option>
+                                    <option>นาง</option>
+                                    <option>นางสาว</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <label for="firstName" class="form-label">ข้าพเจ้าชื่อ</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <label for="lastName" class="form-label">นามสกุล</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="firstName" class="form-label">รหัสนักศึกษา</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">เบอร์โทรศัพท์</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label for="state" class="form-label">หลักสูตร ปริญญาตรี</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>4-5 ปี</option>
+                                    <option>4 ปี เทียบเข้าเรียน (2ปี)</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label for="state" class="form-label">ภาค</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>ภาคปกติ</option>
+                                    <option>ภาคสมทบ</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="state" class="form-label">คณะ</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>นาย</option>
+                                    <option>นาง</option>
+                                    <option>นางสาว</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="state" class="form-label">สาขา</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>นาย</option>
+                                    <option>นาง</option>
+                                    <option>นางสาว</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก</label>
+                                <input type="text" class="form-control" id="address" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+
+                            <div class="col-9">
+                                <label for="address"
+                                    class="form-label">พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง/ใบรับรองแพทย์/เอกสารอื่นๆ</label>
+                                <!-- <input type="text" class="form-control" id="address" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div> -->
+                            </div>
+
+                            <div class="col-3">
+                                <label class="from-label">จึงเรียนมาเพื่อโปรดพิจารณา</label>
+                            </div>
+
+                            <div class="col-4">
+                                <label class="from-label">ขอแสดงความนับถือ</label>
+                            </div>
+
+                            <div class="col-4">
+                                <label for="firstName" class="form-label">นักศึกษา</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล" value=""
+                                    required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">(2) ความเห็นหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</h4>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">ภาคเรียนที่ 1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label for="firstName" class="form-label">หัวหน้ากลุ่มภารกิจทะเบียนเรียน
+                                                ประมวลผลฯ</label>
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="ชื่อ-สกุล" value="" required>
+                                            <div class="invalid-feedback">
+                                                Valid first name is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">(3) ความเห็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</h4>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            ทราบ
+                                        </label>
+                                    </div>
+                                    <!-- <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">ภาคเรียนที่ 1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
+                                    </div> -->
+                                    <div class="col-sm-5">
+                                        <label for="firstName"
+                                            class="form-label">ผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
+                                            value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">(4) ความเห็นอาจารย์ที่ปรึกษา</h4>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            ทราบ
+                                        </label>
+                                    </div>
+                                    <!-- <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">ภาคเรียนที่ 1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
+                                    </div> -->
+                                    <div class="col-sm-5">
+                                        <label for="firstName" class="form-label">อาจารย์ที่ปรึกษา</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
+                                            value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">(5) ความเห็นประธานคณะกรรมการประจําหลักสูตร</h4>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            ทราบ
+                                        </label>
+                                    </div>
+                                    <!-- <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">ภาคเรียนที่ 1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
+                                    </div> -->
+                                    <div class="col-sm-5">
+                                        <label for="firstName" class="form-label">ประธานคณะกรรมการประจําหลักสูตร</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
+                                            value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">(6) ความเห็นคณบดี</h4>
+                                    <!-- <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้
+                                        </label>
+                                    </div> -->
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">อนุมัติ</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">ไม่ อนุมัติ</label>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <label for="firstName" class="form-label">ความเห็นคณบดี</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
+                                            value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">(7) งานเงินรายได้ กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ
+                                        ได้รับชําระเงินจํานวน </h4>
+                                    <!-- <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้
+                                        </label>
+                                    </div> -->
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">ภาคเรียนที่ 1 1,200
+                                            บาท</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2 1,000
+                                            บาท</label>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <label for="firstName" class="form-label">ผู้รับเงิน</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
+                                            value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">(8) ส่งเอกสารคําร้องขอลาพักการศึกษาตัวจริง</h4>
+                                    <label>ให้กลุ่มภารกิจ
+                                        ทะเบียนฯ ชั้น 2 อาคารอํานวย ยศสุข เพื่อบันทึกคําร้องขอลาพัก
+                                        การศึกษา และให้นักศึกษาเก็บหลักฐานใบเสร็จที่ชําระเงินไว้
+                                        เพื่อตรวจสอบการบันทึกการลาพักการศึกษา </label>
+                                    <!-- <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">ภาคเรียนที่ 1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <label for="firstName" class="form-label">หัวหน้ากลุ่มภารกิจทะเบียนเรียน
+                                            ประมวลผลฯ</label>
+                                        <input type="text" class="form-control" id="firstName"
+                                            placeholder="ชื่อ-สกุล" value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">(9) สําหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล</h4>
+                                    <label for="example-date-input" class="from-label">
+                                        ได้บันทึกการข้อมูลดังกล่าวไว้ในวันที่</label>
+                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                    <!-- <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">ภาคเรียนที่ 1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
+                                    </div> -->
+                                    <div class="col-sm-5">
+                                        <label for="firstName" class="form-label">เจ้าหน้าที่บันทึก</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
+                                            value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="py-5 text-center">
+                            <img class="d-block mx-auto mb-4" src="img/maejo.png" alt="" width="10%" height="10%">
+                            <h2>คํารับรองของผู้ปกครอง</h2>
+                            <!-- <p class="lead">(สําหรับนักศึกษาที่ได้ศึกษามาแล้ว ไม่น้อยกว่าหนึ่งภาคการศึกษา)</p> -->
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-sm-2">
+                                <label for="firstName" class="form-label">เขียนที่ บ้านเลขที่</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-2">
+                                <label for="lastName" class="form-label">หมู่ที่</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">ตำบล</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">อำเภอ</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">จังหวัด</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-2">
+                                <label for="lastName" class="form-label">รหัสไปรษสนีย์</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label for="lastName" class="form-label">เบอร์โทรศัพท์</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <label for="example-date-input" class="from-label">วันที่</label>
+                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                            </div>
+
+                            <div class="col-sm-7">
+                                <label for="firstName" class="form-label">ยินยอมให้นักศึกษาลาพักการศึกษา
+                                    ในภาคเรียนที่</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <label for="lastName" class="form-label">ปีการศึกษา</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-md-1">
+                                <label>ตามที่</label>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="state" class="form-label">คำนำหน้า</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>นาย</option>
+                                    <option>นาง</option>
+                                    <option>นางสาว</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <label for="firstName" class="form-label">ชื่อ</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">นามสกุล</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="firstName" class="form-label">รหัสนักศึกษา</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">เบอร์โทรศัพท์</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label for="state" class="form-label">หลักสูตร ปริญญาตรี</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>4-5 ปี</option>
+                                    <option>4 ปี เทียบเข้าเรียน (2ปี)</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label for="state" class="form-label">ภาค</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>ภาคปกติ</option>
+                                    <option>ภาคสมทบ</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="state" class="form-label">คณะ</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>นาย</option>
+                                    <option>นาง</option>
+                                    <option>นางสาว</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="state" class="form-label">สาขา</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>นาย</option>
+                                    <option>นาง</option>
+                                    <option>นางสาว</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <label for="firstName"
+                                    class="form-label">ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา
+                                    ในภาคเรียนที่</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">ปีการศึกษา</label>
                                 <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
                                     Valid last name is required.
@@ -117,156 +742,248 @@
                             </div>
 
                             <div class="col-12">
-                                <label for="username" class="form-label">Username</label>
-                                <div class="input-group">
-                                    <span class="input-group-text">@</span>
-                                    <input type="text" class="form-control" id="username" placeholder="Username"
-                                        required>
-                                    <div class="invalid-feedback">
-                                        Your username is required.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="email" class="form-label">Email <span
-                                        class="text-muted">(Optional)</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                                <div class="invalid-feedback">
-                                    Please enter a valid email address for shipping updates.
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
-                                    required>
+                                <label for="address" class="form-label">เนื่องจาก</label>
+                                <input type="text" class="form-control" id="address" placeholder="" required>
                                 <div class="invalid-feedback">
                                     Please enter your shipping address.
                                 </div>
                             </div>
 
-                            <div class="col-12">
-                                <label for="address2" class="form-label">Address 2 <span
-                                        class="text-muted">(Optional)</span></label>
-                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                            </div>
-
-                            <div class="col-md-5">
-                                <label for="country" class="form-label">Country</label>
-                                <select class="form-select" id="country" required>
-                                    <option value="">Choose...</option>
-                                    <option>United States</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid country.
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <label for="state" class="form-label">State</label>
+                            <div class="col-md-2">
+                                <label for="state" class="form-label">คำนำหน้า</label>
                                 <select class="form-select" id="state" required>
-                                    <option value="">Choose...</option>
-                                    <option>California</option>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>นาย</option>
+                                    <option>นาง</option>
+                                    <option>นางสาว</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a valid state.
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
-                                <label for="zip" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="col-sm-5">
+                                <label for="firstName" class="form-label">ข้าพเจ้าชื่อ</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Zip code required.
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <label for="lastName" class="form-label">นามสกุล</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">ผู้ปกครองของนักศึกษาดังกล่าวข้างต้น
+                                    ได้รับทราบการขอลาพักการศึกษาแล้ว และยินดีให้ปฏิบัติตามความประสงค์ของนักศึกษา</label>
+                                <!-- <input type="text" class="form-control" id="address" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div> -->
+                            </div>
+
+                            <div class="col-4"></div>
+                            <div class="col-5"></div>
+
+                            <div class="col-3">
+                                <label class="from-label">จึงเรียนมาเพื่อโปรดพิจารณา</label>
+                            </div>
+
+                            <div class="col-4">
+                                <label class="from-label">ขอแสดงความนับถือ</label>
+                            </div>
+
+                            <div class="col-4">
+                                <label for="firstName" class="form-label">ผู้ปกครองนักศึกษา</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุลผู้ปกครอง"
+                                    value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+
+                            <div class="col-12">
+                                <h2><ins>ขั้นตอนการเสนอคําร้องลาพักการศึกษา</ins></h2>
+                                <h6>1. นักศึกษากรอกคําร้องขอลาพักการศึกษา <br>
+                                    2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ<br>
+                                    3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอํานวย
+                                    ยศสุข)<br>
+                                    4. เสนอคําร้องต่ออาจารย2ที่ปรึกษา (คณะที่นักศึกษาสังกัด)<br>
+                                    5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร (คณะที่นักศึกษาสังกัด)<br>
+                                    6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด)<br>
+                                    7. นําคําร้องไปชําระเงิน (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ)<br>
+                                    8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ)
+                                    เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป<br>
+                                    9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป </h6>
+                            </div>
+
+                        </div>
+
+
+                        <!-- <div class="col-12">
+                            <label for="username" class="form-label">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                <div class="invalid-feedback">
+                                    Your username is required.
                                 </div>
                             </div>
                         </div>
 
-                        <hr class="my-4">
-
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="same-address">
-                            <label class="form-check-label" for="same-address">Shipping address is the same as my
-                                billing address</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="save-info">
-                            <label class="form-check-label" for="save-info">Save this information for next time</label>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <h4 class="mb-3">Payment</h4>
-
-                        <div class="my-3">
-                            <div class="form-check">
-                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
-                                    required>
-                                <label class="form-check-label" for="credit">Credit card</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                                <label class="form-check-label" for="debit">Debit card</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                                <label class="form-check-label" for="paypal">PayPal</label>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span
+                                    class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
                             </div>
                         </div>
 
-                        <div class="row gy-3">
-                            <div class="col-md-6">
-                                <label for="cc-name" class="form-label">Name on card</label>
-                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                                <small class="text-muted">Full name as displayed on card</small>
-                                <div class="invalid-feedback">
-                                    Name on card is required
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="cc-number" class="form-label">Credit card number</label>
-                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Credit card number is required
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="cc-expiration" class="form-label">Expiration</label>
-                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Expiration date required
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="cc-cvv" class="form-label">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Security code required
-                                </div>
+                        <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
                             </div>
                         </div>
 
-                        <hr class="my-4">
+                        <div class="col-12">
+                            <label for="address2" class="form-label">Address 2 <span
+                                    class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                        </div>
 
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-                    </form>
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country" required>
+                                <option value="">Choose...</option>
+                                <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" required>
+                                <option value="">Choose...</option>
+                                <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
                 </div>
-            </div>
-        </main>
 
-        <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 2017–2020 Company Name</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Privacy</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Support</a></li>
-            </ul>
-        </footer>
+                <hr class="my-4">
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="same-address">
+                    <label class="form-check-label" for="same-address">Shipping address is the same as my
+                        billing address</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="save-info">
+                    <label class="form-check-label" for="save-info">Save this information for next time</label>
+                </div>
+
+                <hr class="my-4">
+
+                <h4 class="mb-3">Payment</h4>
+
+                <div class="my-3">
+                    <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                        <label class="form-check-label" for="credit">Credit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="debit">Debit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="paypal">PayPal</label>
+                    </div>
+                </div>
+
+                <div class="row gy-3">
+                    <div class="col-md-6">
+                        <label for="cc-name" class="form-label">Name on card</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                        <small class="text-muted">Full name as displayed on card</small>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="cc-number" class="form-label">Credit card number</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Credit card number is required
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="cc-expiration" class="form-label">Expiration</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Expiration date required
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="cc-cvv" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Security code required
+                        </div>
+                    </div> -->
+                </div>
+
+                <hr class="my-4">
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit">ส่งคำร้องลาพักการศึกษา</button>
+                </form>
+            </div>
+    </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017–2020 6204101319-ธนะรัชต์</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
     </div>
 
 
