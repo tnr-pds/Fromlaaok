@@ -103,21 +103,24 @@
                         <div class="row g-3">
                             <div class="col-sm-3">
                                 <label for="example-date-input" class="from-label">วันที่</label>
-                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input" required>
+                                <div class="invalid-feedback">
+                                    โปรดเลือกวันที่                                
+                                </div>
                             </div>
                             <div class="col-sm-4">
-                                <label for="firstName" class="form-label">ภาคเรียนที่</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <label for="parkreand" class="form-label">ภาคเรียนที่</label>
+                                <input type="number" class="form-control" id="parkreand" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดระบุภาคเรียน
                                 </div>
                             </div>
 
                             <div class="col-sm-5">
-                                <label for="lastName" class="form-label">ปีการศึกษา</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="peekarn" class="form-label">ปีการศึกษา</label>
+                                <input type="number" class="form-control" id="peekarn" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุปีการศึกษา
                                 </div>
                             </div>
 
@@ -130,7 +133,7 @@
                                     <option>นางสาว</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกคำนำหน้า
                                 </div>
                             </div>
 
@@ -138,7 +141,7 @@
                                 <label for="firstName" class="form-label">ข้าพเจ้าชื่อ</label>
                                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดระบุชื่อ
                                 </div>
                             </div>
 
@@ -146,88 +149,88 @@
                                 <label for="lastName" class="form-label">นามสกุล</label>
                                 <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุนามสกุล
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="firstName" class="form-label">รหัสนักศึกษา</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <label for="codestudent" class="form-label">รหัสนักศึกษา</label>
+                                <input type="number" class="form-control" id="codestudent" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดระบุรหัสนักศึกษา
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="lastName" class="form-label">เบอร์โทรศัพท์</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="phonest" class="form-label">เบอร์โทรศัพท์</label>
+                                <input type="number" class="form-control" id="phonest" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุเบอร์โทรศัพท์
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <label for="state" class="form-label">หลักสูตร ปริญญาตรี</label>
-                                <select class="form-select" id="state" required>
+                                <label for="ptee" class="form-label">หลักสูตร ปริญญาตรี</label>
+                                <select class="form-select" id="ptee" required>
                                     <option value="">โปรดเลือก...</option>
                                     <option>4-5 ปี</option>
                                     <option>4 ปี เทียบเข้าเรียน (2ปี)</option>
 
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกหลักสูตร
                                 </div>
                             </div>
 
                             <div class="col-md-2">
-                                <label for="state" class="form-label">ภาค</label>
-                                <select class="form-select" id="state" required>
+                                <label for="park" class="form-label">ภาค</label>
+                                <select class="form-select" id="park" required>
                                     <option value="">โปรดเลือก...</option>
                                     <option>ภาคปกติ</option>
                                     <option>ภาคสมทบ</option>
 
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกภาคการศึกษา
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="state" class="form-label">คณะ</label>
-                                <select class="form-select" id="state" required>
+                                <label for="kana" class="form-label">คณะ</label>
+                                <select class="form-select" id="kana" required>
                                     <option value="">โปรดเลือก...</option>
                                     <option>นาย</option>
                                     <option>นาง</option>
                                     <option>นางสาว</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกคณะ
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="state" class="form-label">สาขา</label>
-                                <select class="form-select" id="state" required>
+                                <label for="saka" class="form-label">สาขา</label>
+                                <select class="form-select" id="saka" required>
                                     <option value="">โปรดเลือก...</option>
                                     <option>นาย</option>
                                     <option>นาง</option>
                                     <option>นางสาว</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกสาขา
                                 </div>
                             </div>
 
                             <div class="col-12">
-                                <label for="address" class="form-label">มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก</label>
-                                <input type="text" class="form-control" id="address" placeholder="" required>
+                                <label for="prasong" class="form-label">มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก</label>
+                                <input type="text" class="form-control" id="prasong" placeholder="" required>
                                 <div class="invalid-feedback">
-                                    Please enter your shipping address.
+                                    โปรดกรอกความประสงค์์ที่จะขอลาพัก
                                 </div>
                             </div>
 
                             <div class="col-9">
-                                <label for="address"
+                                <label for="huako"
                                     class="form-label">พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง/ใบรับรองแพทย์/เอกสารอื่นๆ</label>
                                 <!-- <input type="text" class="form-control" id="address" placeholder="" required>
                                 <div class="invalid-feedback">
@@ -244,8 +247,8 @@
                             </div>
 
                             <div class="col-4">
-                                <label for="firstName" class="form-label">นักศึกษา</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล" value=""
+                                <label for="studentmju" class="form-label">นักศึกษา</label>
+                                <input type="text" class="form-control" id="studentmju" placeholder="ชื่อ-สกุล" value=""
                                     required>
                                 <div class="invalid-feedback">
                                     Valid first name is required.
@@ -545,59 +548,59 @@
 
                         <div class="row g-3">
                             <div class="col-sm-2">
-                                <label for="firstName" class="form-label">เขียนที่ บ้านเลขที่</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <label for="banint" class="form-label">เขียนที่ บ้านเลขที่</label>
+                                <input type="number" class="form-control" id="banint" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดระบุบ้านเลขที่
                                 </div>
                             </div>
 
 
                             <div class="col-sm-2">
-                                <label for="lastName" class="form-label">หมู่ที่</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="mootee" class="form-label">หมู่ที่</label>
+                                <input type="number" class="form-control" id="mootee" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุเลขที่หมู่บ้าน
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="lastName" class="form-label">ตำบล</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="tumbon" class="form-label">ตำบล</label>
+                                <input type="text" class="form-control" id="tumbon" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุตำบล
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="lastName" class="form-label">อำเภอ</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="aumper" class="form-label">อำเภอ</label>
+                                <input type="text" class="form-control" id="aumper" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุอำเภอ
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="lastName" class="form-label">จังหวัด</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="jangwat" class="form-label">จังหวัด</label>
+                                <input type="text" class="form-control" id="jangwat" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุจังหวัด
                                 </div>
                             </div>
 
                             <div class="col-sm-2">
-                                <label for="lastName" class="form-label">รหัสไปรษสนีย์</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="paisa" class="form-label">รหัสไปรษสนีย์</label>
+                                <input type="number" class="form-control" id="paisa" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุรหัสไปรษสนีย์
                                 </div>
                             </div>
 
                             <div class="col-sm-3">
-                                <label for="lastName" class="form-label">เบอร์โทรศัพท์</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="phonest" class="form-label">เบอร์โทรศัพท์</label>
+                                <input type="number" class="form-control" id="phonest" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุเบอร์โทรศัพท์
                                 </div>
                             </div>
 
@@ -607,19 +610,19 @@
                             </div>
 
                             <div class="col-sm-7">
-                                <label for="firstName" class="form-label">ยินยอมให้นักศึกษาลาพักการศึกษา
+                                <label for="parkreand" class="form-label">ยินยอมให้นักศึกษาลาพักการศึกษา
                                     ในภาคเรียนที่</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <input type="number" class="form-control" id="parkreand" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดระบุภาคเรียน
                                 </div>
                             </div>
 
                             <div class="col-sm-5">
-                                <label for="lastName" class="form-label">ปีการศึกษา</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="peekarn" class="form-label">ปีการศึกษา</label>
+                                <input type="number" class="form-control" id="peekarn" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุปีการศึกษา
                                 </div>
                             </div>
 
@@ -635,7 +638,7 @@
                                     <option>นางสาว</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกคำนำหน้า
                                 </div>
                             </div>
 
@@ -643,7 +646,7 @@
                                 <label for="firstName" class="form-label">ชื่อ</label>
                                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดระบุชื่อ
                                 </div>
                             </div>
 
@@ -651,23 +654,23 @@
                                 <label for="lastName" class="form-label">นามสกุล</label>
                                 <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุนามสกุล
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="firstName" class="form-label">รหัสนักศึกษา</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <label for="codestudent" class="form-label">รหัสนักศึกษา</label>
+                                <input type="number" class="form-control" id="codestudent" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดระบุรหัสนักศึกษา
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="lastName" class="form-label">เบอร์โทรศัพท์</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="phonest" class="form-label">เบอร์โทรศัพท์</label>
+                                <input type="number" class="form-control" id="phonest" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุเบอร์โทรศัพท์
                                 </div>
                             </div>
 
@@ -680,7 +683,7 @@
 
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกหลักสูตร
                                 </div>
                             </div>
 
@@ -693,33 +696,33 @@
 
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกภาคการศึกษา
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="state" class="form-label">คณะ</label>
-                                <select class="form-select" id="state" required>
+                                <label for="kana" class="form-label">คณะ</label>
+                                <select class="form-select" id="kana" required>
                                     <option value="">โปรดเลือก...</option>
                                     <option>นาย</option>
                                     <option>นาง</option>
                                     <option>นางสาว</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกคณะ
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="state" class="form-label">สาขา</label>
-                                <select class="form-select" id="state" required>
+                                <label for="saka" class="form-label">สาขา</label>
+                                <select class="form-select" id="saka" required>
                                     <option value="">โปรดเลือก...</option>
                                     <option>นาย</option>
                                     <option>นาง</option>
                                     <option>นางสาว</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกสาขา
                                 </div>
                             </div>
 
@@ -727,17 +730,17 @@
                                 <label for="firstName"
                                     class="form-label">ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา
                                     ในภาคเรียนที่</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <input type="number" class="form-control" id="firstName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดระบุภาคเรียน
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
                                 <label for="lastName" class="form-label">ปีการศึกษา</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <input type="number" class="form-control" id="lastName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุปีการศึกษา
                                 </div>
                             </div>
 
@@ -745,7 +748,7 @@
                                 <label for="address" class="form-label">เนื่องจาก</label>
                                 <input type="text" class="form-control" id="address" placeholder="" required>
                                 <div class="invalid-feedback">
-                                    Please enter your shipping address.
+                                    โปรดระบุเหตุผล
                                 </div>
                             </div>
 
@@ -758,7 +761,7 @@
                                     <option>นางสาว</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please provide a valid state.
+                                    โปรดเลือกคำนำหน้า
                                 </div>
                             </div>
 
@@ -766,7 +769,7 @@
                                 <label for="firstName" class="form-label">ข้าพเจ้าชื่อ</label>
                                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดระบุชื่อผู้ปกครอง
                                 </div>
                             </div>
 
@@ -774,7 +777,7 @@
                                 <label for="lastName" class="form-label">นามสกุล</label>
                                 <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid last name is required.
+                                    โปรดระบุนามสกุลผู้ปกครอง
                                 </div>
                             </div>
 
