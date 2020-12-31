@@ -89,7 +89,6 @@
                             <strong>$20</strong>
                         </li>
                     </ul>
-
                     <form class="card p-2">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Promo code">
@@ -103,16 +102,23 @@
                         <div class="row g-3">
                             <div class="col-sm-3">
                                 <label for="example-date-input" class="from-label">วันที่</label>
-                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input" required>
+                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input"
+                                    required>
                                 <div class="invalid-feedback">
-                                    โปรดเลือกวันที่                                
+                                    โปรดเลือกวันที่
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                                <label for="parkreand" class="form-label">ภาคเรียนที่</label>
-                                <input type="number" class="form-control" id="parkreand" placeholder="" value="" required>
+                                
+                                <label for="state" class="form-label">ภาคเรียนที่</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>ภาคเรียนที่ 1</option>
+                                    <option>ภาคเรียนที่ 2</option>
+                                    
+                                </select>
                                 <div class="invalid-feedback">
-                                    โปรดระบุภาคเรียน
+                                    โปรดเลือกภาคเรียน
                                 </div>
                             </div>
 
@@ -155,7 +161,8 @@
 
                             <div class="col-sm-4">
                                 <label for="codestudent" class="form-label">รหัสนักศึกษา</label>
-                                <input type="number" class="form-control" id="codestudent" placeholder="" value="" required>
+                                <input type="number" class="form-control" id="codestudent" placeholder="" value=""
+                                    required>
                                 <div class="invalid-feedback">
                                     โปรดระบุรหัสนักศึกษา
                                 </div>
@@ -225,7 +232,7 @@
                                 <label for="prasong" class="form-label">มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก</label>
                                 <input type="text" class="form-control" id="prasong" placeholder="" required>
                                 <div class="invalid-feedback">
-                                    โปรดกรอกความประสงค์์ที่จะขอลาพัก
+                                    โปรดกรอกความประสงค์ที่จะขอลาพัก
                                 </div>
                             </div>
 
@@ -247,11 +254,10 @@
                             </div>
 
                             <div class="col-4">
-                                <label for="studentmju" class="form-label">นักศึกษา</label>
-                                <input type="text" class="form-control" id="studentmju" placeholder="ชื่อ-สกุล" value=""
-                                    required>
+                                <label for="exampleFormControlFile1">นักศึกษา</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดอัพโหลดลายเซ็นนักศึกษา
                                 </div>
                             </div>
 
@@ -280,12 +286,12 @@
                                             <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
                                         </div>
                                         <div class="col-sm-5">
-                                            <label for="firstName" class="form-label">หัวหน้ากลุ่มภารกิจทะเบียนเรียน
+                                            <label for="exampleFormControlFile1">หัวหน้ากลุ่มภารกิจทะเบียนเรียน
                                                 ประมวลผลฯ</label>
-                                            <input type="text" class="form-control" id="firstName"
-                                                placeholder="ชื่อ-สกุล" value="" required>
+                                            <input type="file" class="form-control-file" id="exampleFormControlFile1"
+                                                required>
                                             <div class="invalid-feedback">
-                                                Valid first name is required.
+                                                โปรดอัพโหลดลายเซ็นหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ
                                             </div>
                                         </div>
                                     </div>
@@ -314,12 +320,11 @@
                                         <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
                                     </div> -->
                                     <div class="col-sm-5">
-                                        <label for="firstName"
-                                            class="form-label">ผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
-                                            value="" required>
+                                        <label for="exampleFormControlFile1">ผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1"
+                                            required>
                                         <div class="invalid-feedback">
-                                            Valid first name is required.
+                                            โปรดอัพโหลดลายเซ็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ
                                         </div>
                                     </div>
                                 </div>
@@ -347,11 +352,11 @@
                                         <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
                                     </div> -->
                                     <div class="col-sm-5">
-                                        <label for="firstName" class="form-label">อาจารย์ที่ปรึกษา</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
-                                            value="" required>
+                                        <label for="exampleFormControlFile1">อาจารย์ที่ปรึกษา</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1"
+                                            required>
                                         <div class="invalid-feedback">
-                                            Valid first name is required.
+                                            โปรดอัพโหลดลายเซ็นอาจารย์ที่ปรึกษา
                                         </div>
                                     </div>
                                 </div>
@@ -379,11 +384,11 @@
                                         <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
                                     </div> -->
                                     <div class="col-sm-5">
-                                        <label for="firstName" class="form-label">ประธานคณะกรรมการประจําหลักสูตร</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
-                                            value="" required>
+                                        <label for="exampleFormControlFile1">ประธานคณะกรรมการประจําหลักสูตร</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1"
+                                            required>
                                         <div class="invalid-feedback">
-                                            Valid first name is required.
+                                            โปรดอัพโหลดลายเซ็นประธานคณะกรรมการประจําหลักสูตร
                                         </div>
                                     </div>
                                 </div>
@@ -411,11 +416,11 @@
                                         <label class="form-check-label" for="inlineCheckbox2">ไม่ อนุมัติ</label>
                                     </div>
                                     <div class="col-sm-5">
-                                        <label for="firstName" class="form-label">ความเห็นคณบดี</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
-                                            value="" required>
+                                        <label for="exampleFormControlFile1">คณบดี</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1"
+                                            required>
                                         <div class="invalid-feedback">
-                                            Valid first name is required.
+                                            โปรดอัพโหลดลายเซ็นคณบดี
                                         </div>
                                     </div>
                                 </div>
@@ -446,11 +451,11 @@
                                             บาท</label>
                                     </div>
                                     <div class="col-sm-5">
-                                        <label for="firstName" class="form-label">ผู้รับเงิน</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
-                                            value="" required>
+                                        <label for="exampleFormControlFile1">ผู้รับเงิน</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1"
+                                            required>
                                         <div class="invalid-feedback">
-                                            Valid first name is required.
+                                            โปรดอัพโหลดลายเซ็นผู้รับเงิน
                                         </div>
                                     </div>
                                 </div>
@@ -518,11 +523,11 @@
                                         <label class="form-check-label" for="inlineCheckbox2">ภาคเรียนที่ 2</label>
                                     </div> -->
                                     <div class="col-sm-5">
-                                        <label for="firstName" class="form-label">เจ้าหน้าที่บันทึก</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุล"
-                                            value="" required>
+                                        <label for="exampleFormControlFile1">เจ้าหน้าที่บันทึก</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1"
+                                            required>
                                         <div class="invalid-feedback">
-                                            Valid first name is required.
+                                            โปรดอัพโหลดลายเซ็นเจ้าหน้าที่บันทึก
                                         </div>
                                     </div>
                                 </div>
@@ -610,11 +615,15 @@
                             </div>
 
                             <div class="col-sm-7">
-                                <label for="parkreand" class="form-label">ยินยอมให้นักศึกษาลาพักการศึกษา
-                                    ในภาคเรียนที่</label>
-                                <input type="number" class="form-control" id="parkreand" placeholder="" value="" required>
+                                <label for="state" class="form-label">ยินยอมให้นักศึกษาลาพักการศึกษา ในภาคเรียนที่</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">โปรดเลือก...</option>
+                                    <option>ภาคเรียนที่ 1</option>
+                                    <option>ภาคเรียนที่ 2</option>
+                                    
+                                </select>
                                 <div class="invalid-feedback">
-                                    โปรดระบุภาคเรียน
+                                    โปรดเลือกภาคเรียน
                                 </div>
                             </div>
 
@@ -660,7 +669,8 @@
 
                             <div class="col-sm-4">
                                 <label for="codestudent" class="form-label">รหัสนักศึกษา</label>
-                                <input type="number" class="form-control" id="codestudent" placeholder="" value="" required>
+                                <input type="number" class="form-control" id="codestudent" placeholder="" value=""
+                                    required>
                                 <div class="invalid-feedback">
                                     โปรดระบุรหัสนักศึกษา
                                 </div>
@@ -730,7 +740,8 @@
                                 <label for="firstName"
                                     class="form-label">ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา
                                     ในภาคเรียนที่</label>
-                                <input type="number" class="form-control" id="firstName" placeholder="" value="" required>
+                                <input type="number" class="form-control" id="firstName" placeholder="" value=""
+                                    required>
                                 <div class="invalid-feedback">
                                     โปรดระบุภาคเรียน
                                 </div>
@@ -738,7 +749,8 @@
 
                             <div class="col-sm-4">
                                 <label for="lastName" class="form-label">ปีการศึกษา</label>
-                                <input type="number" class="form-control" id="lastName" placeholder="" value="" required>
+                                <input type="number" class="form-control" id="lastName" placeholder="" value=""
+                                    required>
                                 <div class="invalid-feedback">
                                     โปรดระบุปีการศึกษา
                                 </div>
@@ -802,44 +814,46 @@
                             </div>
 
                             <div class="col-4">
-                                <label for="firstName" class="form-label">ผู้ปกครองนักศึกษา</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="ชื่อ-สกุลผู้ปกครอง"
-                                    value="" required>
+                                <label for="exampleFormControlFile1">ผู้ปกครองนักศึกษา</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    โปรดอัพโหลดลายเซ็นผู้ปกครอง
                                 </div>
                             </div>
-
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-
-                            <div class="col-12">
-                                <h2><ins>ขั้นตอนการเสนอคําร้องลาพักการศึกษา</ins></h2>
-                                <h6>1. นักศึกษากรอกคําร้องขอลาพักการศึกษา <br>
-                                    2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ<br>
-                                    3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอํานวย
-                                    ยศสุข)<br>
-                                    4. เสนอคําร้องต่ออาจารย2ที่ปรึกษา (คณะที่นักศึกษาสังกัด)<br>
-                                    5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร (คณะที่นักศึกษาสังกัด)<br>
-                                    6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด)<br>
-                                    7. นําคําร้องไปชําระเงิน (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ)<br>
-                                    8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ)
-                                    เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป<br>
-                                    9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป </h6>
-                            </div>
-
                         </div>
 
+                </div>
 
-                        <!-- <div class="col-12">
+
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+
+                <div class="col-12">
+                    <h2><ins>ขั้นตอนการเสนอคําร้องลาพักการศึกษา</ins></h2>
+                    <h6>1. นักศึกษากรอกคําร้องขอลาพักการศึกษา <br>
+                        2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ<br>
+                        3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอํานวย
+                        ยศสุข)<br>
+                        4. เสนอคําร้องต่ออาจารย2ที่ปรึกษา (คณะที่นักศึกษาสังกัด)<br>
+                        5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร (คณะที่นักศึกษาสังกัด)<br>
+                        6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด)<br>
+                        7. นําคําร้องไปชําระเงิน (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ)<br>
+                        8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ)
+                        เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป<br>
+                        9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป </h6>
+                </div>
+
+
+
+                <!-- <div class="col-12">
                             <label for="username" class="form-label">Username</label>
                             <div class="input-group">
                                 <span class="input-group-text">@</span>
@@ -849,7 +863,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-12">
                             <label for="email" class="form-label">Email <span
                                     class="text-muted">(Optional)</span></label>
@@ -858,7 +871,6 @@
                                 Please enter a valid email address for shipping updates.
                             </div>
                         </div>
-
                         <div class="col-12">
                             <label for="address" class="form-label">Address</label>
                             <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
@@ -866,13 +878,11 @@
                                 Please enter your shipping address.
                             </div>
                         </div>
-
                         <div class="col-12">
                             <label for="address2" class="form-label">Address 2 <span
                                     class="text-muted">(Optional)</span></label>
                             <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
                         </div>
-
                         <div class="col-md-5">
                             <label for="country" class="form-label">Country</label>
                             <select class="form-select" id="country" required>
@@ -883,7 +893,6 @@
                                 Please select a valid country.
                             </div>
                         </div>
-
                         <div class="col-md-4">
                             <label for="state" class="form-label">State</label>
                             <select class="form-select" id="state" required>
@@ -894,7 +903,6 @@
                                 Please provide a valid state.
                             </div>
                         </div>
-
                         <div class="col-md-3">
                             <label for="zip" class="form-label">Zip</label>
                             <input type="text" class="form-control" id="zip" placeholder="" required>
@@ -903,24 +911,18 @@
                             </div>
                         </div>
                 </div>
-
                 <hr class="my-4">
-
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="same-address">
                     <label class="form-check-label" for="same-address">Shipping address is the same as my
                         billing address</label>
                 </div>
-
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="save-info">
                     <label class="form-check-label" for="save-info">Save this information for next time</label>
                 </div>
-
                 <hr class="my-4">
-
                 <h4 class="mb-3">Payment</h4>
-
                 <div class="my-3">
                     <div class="form-check">
                         <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
@@ -935,7 +937,6 @@
                         <label class="form-check-label" for="paypal">PayPal</label>
                     </div>
                 </div>
-
                 <div class="row gy-3">
                     <div class="col-md-6">
                         <label for="cc-name" class="form-label">Name on card</label>
@@ -945,7 +946,6 @@
                             Name on card is required
                         </div>
                     </div>
-
                     <div class="col-md-6">
                         <label for="cc-number" class="form-label">Credit card number</label>
                         <input type="text" class="form-control" id="cc-number" placeholder="" required>
@@ -953,7 +953,6 @@
                             Credit card number is required
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <label for="cc-expiration" class="form-label">Expiration</label>
                         <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
@@ -961,7 +960,6 @@
                             Expiration date required
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <label for="cc-cvv" class="form-label">CVV</label>
                         <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
@@ -969,13 +967,13 @@
                             Security code required
                         </div>
                     </div> -->
-                </div>
-
-                <hr class="my-4">
-
-                <button class="w-100 btn btn-primary btn-lg" type="submit">ส่งคำร้องลาพักการศึกษา</button>
-                </form>
             </div>
+
+            <hr class="my-4">
+
+            <button class="w-100 btn btn-primary btn-lg" type="submit">ส่งคำร้องลาพักการศึกษา</button>
+            </form>
+    </div>
     </div>
     </main>
 
@@ -997,4 +995,4 @@
     <script src="checkout/form-validation.js"></script>
 </body>
 
-</html>
+</html
